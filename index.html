@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" type="text/javascript"></script>
+    <script src="firebase.js" type="module"></script>
     <title>Will you ?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -333,6 +334,23 @@
           my valentine ? &lt;3
         </text>
       </svg>
+    </div>
+    <div class="buttons-container">
+      <button id="yesButton">Yes</button>
+      <button id="noButton">No</button>
+    </div>
+    <div class="leave-message">
+      <form id="message">
+        <input
+          autocomplete="off"
+          type="text"
+          id="messageInput"
+          name="mesiji"
+          placeholder="Leave a message"
+        />
+        <input type="submit" id="messageSubmit" value="Submit" />
+      </form>
+      <p id="love-message">Love you babe, see you soon &lt;3</p>
     </div>
   </body>
 </html>

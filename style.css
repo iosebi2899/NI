@@ -1202,7 +1202,7 @@ svg {
 svg text {
   font-family: "Zen Loop", sans-serif;
   opacity: 0;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   animation-iteration-count: infinite;
   border-radius: 25px;
   padding: 10px;
@@ -1259,4 +1259,103 @@ svg text {
   position: absolute;
   width: 100vw;
   height: 100vh;
+}
+
+.buttons-container {
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  gap: 20px;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.leave-message {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100vw;
+  background-color: rgba(103, 76, 108, 0.4);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  transition: 2s;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: 1s;
+}
+
+#message input[type="text"] {
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+  font-family: "Zen Loop", sans-serif;
+  font-size: 15px;
+  width: 300px;
+  color: #54b8aa;
+  outline: none;
+}
+
+#message input[type="text"]::placeholder {
+  color: #54b8aa;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+#message input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: none;
+  background-image: linear-gradient(to top, #54b8aa, #b774e0);
+  color: white;
+  font-family: "Zen Loop", sans-serif;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: none;
+  background-image: linear-gradient(to top, #54b8aa, #b774e0);
+  color: white;
+  font-family: "Zen Loop", sans-serif;
+  font-size: 15px;
+}
+
+#love-message {
+  font-family: "Zen Loop", sans-serif;
+  font-size: 25px;
+  color: #54b8aa;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 1s;
 }
