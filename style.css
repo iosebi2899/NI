@@ -10,6 +10,10 @@
   --dark-color: #0b090b;
 }
 
+html {
+  overflow: hidden !important;
+}
+
 body {
   overflow: hidden !important;
   display: flex;
